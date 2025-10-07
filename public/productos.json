@@ -4,41 +4,41 @@
         "nombre": "EA Sports FC 26",
         "precio": 69990,
         "categoria": "Juego físico",
-        "imagen": "/img/fifa-26-portada-fisico.png"
+        "imagen": "./img/fifa-26-portada-fisico.png"
     },
     {
         "id": 2,
         "nombre": "Grand Theft Auto 6",
         "precio": 99990,
         "categoria": "Juego físico",
-        "imagen": "/img/gta6-portada-fisico.webp"
+        "imagen": "./img/gta6-portada-fisico.webp"
     },
     {
         "id": 3,
         "nombre": "Battlefield 4",
         "precio": 39990,
         "categoria": "Juego físico",
-        "imagen": "/img/battlefield-4-ps5-portada.jpg"
+        "imagen": "./img/battlefield-4-ps5-portada.jpg"
     },
     {
         "id": 4,
         "nombre": "Red Dead Redemption 2",
         "precio": 39990,
         "categoria": "Juego digital",
-        "imagen": "/img/red-dead-redeptiom2-portada.avif"
+        "imagen": "./img/red-dead-redeptiom2-portada.avif"
     },
     {
         "id": 5,
         "nombre": "Battlefield 6",
         "precio": 79990,
         "categoria": "Juego digital",
-        "imagen": "/img/battlefield-6-portada.jpg"
+        "imagen": "./img/battlefield-6-portada.jpg"
     },
     {
         "id": 6,
         "nombre": "Assassin's Creed The Ezio Collection",
         "precio": 39990,
         "categoria": "Juego digital",
-        "imagen": "/img/as-ezio-collection-portada.avif"
+        "imagen": "./img/as-ezio-collection-portada.avif"
     }
 ]

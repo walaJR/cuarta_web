@@ -23,7 +23,7 @@ function App() {
     const cargarProductos = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`${import.meta.env.BASE_URL}data/productos.json`);
+        const response = await fetch(`${import.meta.env.BASE_URL}productos.json`);
         
         if (!response.ok) {
           throw new Error('No se pudieron cargar los productos');
