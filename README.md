@@ -1,16 +1,143 @@
-# React + Vite
+walaJR Store
+E-commerce de videojuegos desarrollado con React y Vite. Proyecto académico que implementa gestión de estado con hooks, carga de datos desde JSON local, carrito de compras funcional y sistema de búsqueda y filtrado de productos.
+Características Principales
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catálogo de productos con búsqueda en tiempo real
+Filtrado por categorías (juegos digitales y físicos)
+Carrito de compras con gestión completa de productos
+Sistema de notificaciones toast
+Formulario de contacto con validación
+Diseño responsive con Bootstrap 5
+Gestión de estado con useState
+Efectos secundarios con useEffect
+Renderizado condicional en múltiples componentes
 
-Currently, two official plugins are available:
+Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React 18.2.0
+Vite 5.0.8
+Bootstrap 5.3.2
+React-Bootstrap 2.9.1
+JavaScript ES6+
+CSS3
+Font Awesome 6.0.0
 
-## React Compiler
+Estructura del Proyecto
+walajr-store-vite/
+├── index.html
+├── vite.config.js
+├── package.json
+├── public/
+│   ├── productos.json
+│   └── img/
+│       └── [imágenes de productos]
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── index.css
+    ├── assets/
+    │   └── css/
+    │       └── style.css
+    └── components/
+        ├── Navbar.jsx
+        ├── HeroSection.jsx
+        ├── ProductsSection.jsx
+        ├── ProductCard.jsx
+        ├── CartSidebar.jsx
+        ├── ContactSection.jsx
+        ├── Footer.jsx
+        └── Toast.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Implementación de Hooks
+useState
+Gestiona múltiples estados en la aplicación:
 
-## Expanding the ESLint configuration
+Estado del carrito de compras
+Lista de productos y productos filtrados
+Control de carga (loading)
+Estado del carrito lateral (abierto/cerrado)
+Términos de búsqueda y filtros de categoría
+Sistema de notificaciones
+Estados de botones interactivos
+Datos del formulario de contacto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+useEffect
+Maneja efectos secundarios:
+
+Carga de productos desde JSON local al montar el componente
+Filtrado automático cuando cambian los criterios de búsqueda
+Auto-cierre de notificaciones después de 3 segundos
+Detección de tecla Escape para cerrar el carrito
+Control del scroll del body cuando el carrito está abierto
+
+Renderizado Condicional
+Implementado en diversos escenarios:
+
+Mensaje cuando el carrito está vacío
+Spinner de carga mientras se obtienen los productos
+Mensaje cuando no hay resultados de búsqueda
+Cambio de texto en botones según el estado
+Alternancia entre diferentes vistas según condiciones
+
+Funcionalidades
+Catálogo de Productos
+
+Visualización en grid responsive
+Imágenes con fallback en caso de error
+Información de precio y categoría
+Badges de categoría
+
+Búsqueda y Filtrado
+
+Búsqueda por nombre de producto en tiempo real
+Filtro por categoría (digital/físico)
+Combinación de ambos filtros
+Actualización automática de resultados
+
+Carrito de Compras
+
+Agregar productos con feedback visual
+Modificar cantidades (incrementar/decrementar)
+Eliminar productos individuales
+Vaciar carrito completo
+Cálculo automático del total
+Contador de productos en navbar
+Sidebar deslizable
+Cierre con tecla Escape o click en overlay
+
+Notificaciones
+
+Sistema toast con diferentes tipos (success, error, info, warning)
+Auto-cierre después de 3 segundos
+Cierre manual con botón
+Iconos según tipo de mensaje
+
+Formulario de Contacto
+
+Validación de campos requeridos
+Validación de formato de email
+Mensajes de error específicos
+Limpieza automática después de envío exitoso
+
+Notas Técnicas
+
+Extensiones .jsx para componentes React
+Imports de React necesarios en cada componente
+Rutas a archivos en public/ son relativas a la raíz
+Bootstrap se importa como paquete npm, no CDN
+Font Awesome se mantiene como CDN en index.html
+Props y callbacks para comunicación entre componentes
+Estado inmutable (uso de spread operator)
+Cleanup en useEffect para evitar memory leaks
+
+Navegadores Soportados
+
+Chrome (última versión)
+Firefox (última versión)
+Safari (última versión)
+Edge (última versión)
+
+Licencia
+Proyecto académico desarrollado para fines educativos.
+Autor
+Desarrollado como proyecto de aprendizaje de React, hooks y Vite.
