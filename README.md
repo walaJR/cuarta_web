@@ -22,32 +22,6 @@ JavaScript ES6+
 CSS3
 Font Awesome 6.0.0
 
-Estructura del Proyecto
-walajr-store-vite/
-├── index.html
-├── vite.config.js
-├── package.json
-├── public/
-│   ├── productos.json
-│   └── img/
-│       └── [imágenes de productos]
-└── src/
-    ├── main.jsx
-    ├── App.jsx
-    ├── index.css
-    ├── assets/
-    │   └── css/
-    │       └── style.css
-    └── components/
-        ├── Navbar.jsx
-        ├── HeroSection.jsx
-        ├── ProductsSection.jsx
-        ├── ProductCard.jsx
-        ├── CartSidebar.jsx
-        ├── ContactSection.jsx
-        ├── Footer.jsx
-        └── Toast.jsx
-
 Implementación de Hooks
 useState
 Gestiona múltiples estados en la aplicación:
